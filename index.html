@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+    <title></title>
+
+    <!-- <link href="css/mui.min.css" rel="stylesheet" /> -->
+    <link rel="stylesheet" type="text/css" href="css/mui.css"/>
+    <link rel="stylesheet" type="text/css" href="css/mui.picker.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <!--扩展字体图标-->
+    <link rel="stylesheet" href="css/icon-extend/iconfont.css"/>
+    <!-- 动画库 -->
+    <link rel="stylesheet" type="text/css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"/>
+</head>
+<body>
+<!-- 顶部实发工资区域 -->
+<div class="panel-top-container">
+    <p class="panel-top-username" id="username">
+        张大山2019年2月实发
+    </p>
+    <p class="panel-top-salary" id="top_salary">
+        0.00
+    </p>
+    <p class="panel-top-thanks">感谢为公司的付出，辛苦了...
+        <i class="iconfont icon-aixin animated flash"></i>
+    </p>
+</div>
+<!-- 三小项区域 -->
+<div class="mui-content panel-bottom-container">
+    <div class="mui-row panel-bottom-row">
+        <div class="mui-col-sm-4 mui-col-xs-4 panel-bottom-son">
+            <p class="panel-bottom-txt">应发工资</p>
+            <p class="panel-bottom-txt" id="panel_bottom_salary1">0.00</p>
+        </div>
+        <div class="mui-col-sm-4 mui-col-xs-4 panel-bottom-son">
+            <p class="panel-bottom-txt">个人保险</p>
+            <p class="panel-bottom-txt" id="panel_bottom_salary2">0.00</p>
+        </div>
+        <div class="mui-col-sm-4 mui-col-xs-4 panel-bottom-son">
+            <p class="panel-bottom-txt">公积金</p>
+            <p class="panel-bottom-txt" id="panel_bottom_salary3">0.00</p>
+        </div>
+    </div>
+</div>
+<!-- 详情区域 -->
+<div class="detail-container">
+    <!-- 出勤情况 -->
+    <ul class="mui-table-view">
+        <li class="mui-table-view-cell mui-collapse mui-active">
+            <a class="mui-navigate-right detail-salary-container">
+						<span>
+							出勤情况
+						</span>
+                <span class="detail-salary" id="detail_salary1">0.00</span>
+            </a>
+            <div class="mui-collapse-content">
+                <ul class="mui-table-view animated fadeInUp">
+                    <li class="mui-table-view-cell">
+								<span>
+									应出勤
+								</span>
+                        <span class="detail-salary" id="detail_salary1_1">0.00</span>
+                    </li>
+                    <li class="mui-table-view-cell">
+								<span>
+									上班天数
+								</span>
+                        <span class="detail-salary" id="detail_salary1_2">0.00</span>
+                    </li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+    <!-- 基本工资 -->
+    <div class="large-cut"></div>
+    <ul class="mui-table-view">
+        <li class="mui-table-view-cell mui-collapse mui-active">
+            <a class="mui-navigate-right detail-salary-container">
+						<span>
+							基本工资
+						</span>
+                <span class="detail-salary" id="detail_salary1">0.00</span>
+            </a>
+            <div class="mui-collapse-content">
+                <ul class="mui-table-view animated fadeInUp">
+                    <li class="mui-table-view-cell">
+								<span>
+									基本工资
+								</span>
+                        <span class="detail-salary" id="detail_salary1_1">0.00</span>
+                    </li>
+                    <li class="mui-table-view-cell">
+								<span>
+									扣减/奖励金额
+								</span>
+                        <span class="detail-salary" id="detail_salary1_2">0.00</span>
+                    </li>
+                    <li class="mui-table-view-cell">
+								<span>
+									实际基本工资
+								</span>
+                        <span class="detail-salary" id="detail_salary1_3">0.00</span>
+                    </li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+    <!-- 绩效工资 -->
+    <div class="large-cut"></div>
+    <ul class="mui-table-view">
+        <li class="mui-table-view-cell mui-collapse mui-active">
+            <a class="mui-navigate-right detail-salary-container">
+						<span>
+							绩效工资
+						</span>
+                <span class="detail-salary" id="detail_salary2">0.00</span>
+            </a>
+            <div class="mui-collapse-content ">
+                <ul class="mui-table-view animated fadeInUp">
+                    <li class="mui-table-view-cell">
+								<span>
+									绩效工资
+								</span>
+                        <span class="detail-salary" id="detail_salary2_1">0.00</span>
+                    </li>
+                    <li class="mui-table-view-cell">
+								<span>
+									扣减/奖励薪点
+								</span>
+                        <span class="detail-salary" id="detail_salary2_2">0.00</span>
+                    </li>
+                    <li class="mui-table-view-cell">
+								<span>
+									实际绩效工资
+								</span>
+                        <span class="detail-salary" id="detail_salary2_3">0.00</span>
+                    </li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+    <!-- 提取/奖励工资 -->
+    <div class="large-cut"></div>
+    <ul class="mui-table-view">
+        <li class="mui-table-view-cell mui-collapse mui-active">
+            <a class="mui-navigate-right detail-salary-container">
+						<span>
+							提取/奖励工资
+						</span>
+                <span class="detail-salary" id="detail_salary2">0.00</span>
+            </a>
+            <div class="mui-collapse-content ">
+                <ul class="mui-table-view animated fadeInUp">
+                    <li class="mui-table-view-cell">
+								<span>
+									提取/奖励工资
+								</span>
+                        <span class="detail-salary" id="detail_salary2_1">0.00</span>
+                    </li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+    <!-- 各项津贴 -->
+    <div class="large-cut"></div>
+    <ul class="mui-table-view">
+        <li class="mui-table-view-cell mui-collapse mui-active">
+            <a class="mui-navigate-right detail-salary-container">
+						<span>
+							各项津贴
+						</span>
+                <span class="detail-salary" id="detail_salary3">0.00</span>
+            </a>
+            <div class="mui-collapse-content ">
+                <ul class="mui-table-view animated fadeInUp">
+                    <li class="mui-table-view-cell">
+								<span>
+									中/夜班补
+								</span>
+                        <span class="detail-salary" id="detail_salary3_1">0.00</span>
+                    </li>
+                    <li class="mui-table-view-cell">
+								<span>
+									值班补
+								</span>
+                        <span class="detail-salary" id="detail_salary3_2">0.00</span>
+                    </li>
+                    <li class="mui-table-view-cell">
+								<span>
+									司龄津贴
+								</span>
+                        <span class="detail-salary" id="detail_salary3_3">0.00</span>
+                    </li>
+                    <li class="mui-table-view-cell">
+								<span>
+									学历津贴
+								</span>
+                        <span class="detail-salary" id="detail_salary3_3">0.00</span>
+                    </li>
+                    <li class="mui-table-view-cell">
+								<span>
+									资质津贴
+								</span>
+                        <span class="detail-salary" id="detail_salary3_3">0.00</span>
+                    </li>
+                    <li class="mui-table-view-cell">
+								<span>
+									班长补助
+								</span>
+                        <span class="detail-salary" id="detail_salary3_3">0.00</span>
+                    </li>
+                    <li class="mui-table-view-cell">
+								<span>
+									效益补助
+								</span>
+                        <span class="detail-salary" id="detail_salary3_3">0.00</span>
+                    </li>
+                    <li class="mui-table-view-cell">
+								<span>
+									卫生费
+								</span>
+                        <span class="detail-salary" id="detail_salary3_3">0.00</span>
+                    </li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+    <!-- 代扣款 -->
+    <div class="large-cut"></div>
+    <ul class="mui-table-view">
+        <li class="mui-table-view-cell mui-collapse mui-active">
+            <a class="mui-navigate-right detail-salary-container">
+						<span>
+							代扣款
+						</span>
+                <span class="detail-salary" id="detail_salary3">0.00</span>
+            </a>
+            <div class="mui-collapse-content ">
+                <ul class="mui-table-view animated fadeInUp">
+                    <li class="mui-table-view-cell">
+								<span>
+									扣款
+								</span>
+                        <span class="detail-salary" id="detail_salary3_1">0.00</span>
+                    </li>
+                    <li class="mui-table-view-cell">
+								<span>
+									本次扣税
+								</span>
+                        <span class="detail-salary" id="detail_salary3_2">0.00</span>
+                    </li>
+                    <li class="mui-table-view-cell">
+								<span>
+									部门代扣
+								</span>
+                        <span class="detail-salary" id="detail_salary3_3">0.00</span>
+                    </li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+
+    <!-- 月份悬浮按钮 -->
+    <button class="mui-btn-primary detail-hover-month animated bounceInUp" id="btn_month">月</button>
+
+</div>
+
+<script src="js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/mui.picker.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/main.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>
